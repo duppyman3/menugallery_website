@@ -16,11 +16,6 @@ export default function CtaBand() {
             <div className="mt-8 flex justify-center">
               <StoreBadges className="justify-center" />
             </div>
-            <p className="mx-auto mt-10 flex max-w-xs items-baseline text-sm text-ink-muted">
-              <span>Your table is almost ready</span>
-              <span className="dot-leader" />
-              <span>2026</span>
-            </p>
           </div>
         </Reveal>
       </div>

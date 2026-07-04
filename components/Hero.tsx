@@ -3,7 +3,7 @@ import PhoneFrame from "@/components/PhoneFrame";
 import StoreBadges from "@/components/StoreBadges";
 
 const splashAlt =
-  'MenuGallery splash screen: the MenuGallery logo over a collage of restaurant menus, with the tagline "Fotografía un menú y mira los platos."';
+  'MenuGallery splash screen: the MenuGallery logo over a collage of restaurant menus, with the tagline "Photograph a menu, see the dishes."';
 
 export default function Hero() {
   return (
@@ -34,10 +34,9 @@ export default function Hero() {
             </span>
           </div>
 
-          <h1 className="mt-8 font-display text-[clamp(2.5rem,6vw,4.25rem)] font-medium leading-[1.05] tracking-tight text-ink">
-            Photograph a menu,
-            <br />
-            <span className="text-accent">see the dishes.</span>
+          <h1 className="mt-8 font-display text-[clamp(2.25rem,4.2vw,3.5rem)] font-medium leading-[1.05] tracking-tight text-ink">
+            <span className="block">Photograph a menu,</span>
+            <span className="block text-accent">see the dishes.</span>
           </h1>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-muted">
@@ -49,12 +48,6 @@ export default function Hero() {
           <div className="mt-8">
             <StoreBadges />
           </div>
-
-          <p className="mt-6 flex max-w-sm items-baseline text-sm text-ink-muted">
-            <span>In the kitchen now</span>
-            <span className="dot-leader" />
-            <span>arriving soon</span>
-          </p>
         </div>
 
         <Reveal className="flex justify-center lg:justify-end">

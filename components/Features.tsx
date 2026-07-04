@@ -1,5 +1,4 @@
 import Reveal from "@/components/Reveal";
-import SectionLabel from "@/components/SectionLabel";
 
 const features = [
   {
@@ -49,8 +48,7 @@ export default function Features() {
   return (
     <section className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionLabel n={3} label="House specialties" />
-        <h2 className="mt-4 max-w-2xl text-balance font-display text-[clamp(1.9rem,4vw,2.75rem)] font-medium leading-tight tracking-tight text-ink">
+        <h2 className="max-w-2xl text-balance font-display text-[clamp(1.9rem,4vw,2.75rem)] font-medium leading-tight tracking-tight text-ink">
           Everything you need to order well.
         </h2>
 
@@ -59,12 +57,9 @@ export default function Features() {
             <Reveal key={feature.title} delay={i * 100} className="h-full">
               <div className="flex h-full flex-col rounded-2xl border border-ink/10 bg-card p-6">
                 <div className="text-accent">{feature.icon}</div>
-                <div className="mt-5 flex items-baseline text-ink">
-                  <h3 className="font-display text-lg font-semibold tracking-tight">
-                    {feature.title}
-                  </h3>
-                  <span className="dot-leader" />
-                </div>
+                <h3 className="mt-5 font-display text-lg font-semibold tracking-tight text-ink">
+                  {feature.title}
+                </h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                   {feature.body}
                 </p>
