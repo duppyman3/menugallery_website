@@ -1,0 +1,19 @@
+{
+  "name": "The Website Is a Menu",
+  "summary": "A single-page brochure for MenuGallery, typeset like an elegant bistro menu. The site sells the app by embodying it: cream paper, charcoal ink, one warm-orange accent, and dotted price-leader lines that thread a name to its price. Restraint over spectacle — the app screenshots are the heroes.",
+  "principles": [
+    "Cream paper (#F4F4F2), charcoal ink (#2E2E2E), and exactly one accent (warm orange #F09A4B). No second accent, no decorative gradients, no dark mode.",
+    "Sections are plated as menu courses: a numbered eyebrow reads 'Nº 1 — Snap', 'Nº 2 — See', 'Nº 3 — Savor'.",
+    "Restraint in engineering mirrors restraint in design: a single client component (Reveal) drives all scroll animation via IntersectionObserver and data-attributes. No animation library.",
+    "The app screenshots are the protagonists. Chrome stays quiet; a pure-CSS phone frame presents them without competing.",
+    "Meticulous typography and generous whitespace do the persuading. Every rule, dot, and space is intentional."
+  ],
+  "motifs": {
+    "courseLabels": "A small, tracked eyebrow (0.25em letter-spacing, muted ink) numbered like courses on a menu: 'Nº 1 — Snap'.",
+    "dotLeaders": "The recurring menu device — a dotted radial-gradient leader (the dot-leader utility) fills the gap between a dish name and its price, and reappears as a section divider.",
+    "paperGrain": "A fixed full-viewport SVG feTurbulence overlay at ~4.5% multiply gives the flat cream the tooth of printed paper. Zero external assets.",
+    "cssPhoneFrame": "Screenshots sit in a pure-CSS device frame (radius 2.75rem, thin ink bezel, soft low shadow) so no image chrome ships."
+  },
+  "voice": "Appetizing, confident, short sentences. Speak like a menu — concrete nouns, no filler, a little wit. 'Photograph a menu. See the dishes.'",
+  "screensReferenced": ["splash", "home", "results"]
+}

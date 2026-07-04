@@ -1,0 +1,39 @@
+{
+  "name": "MenuGallery Brochure Design System",
+  "realizedIn": "app/globals.css via Tailwind CSS v4 @theme inline; fonts via next/font/google in app/layout.tsx.",
+  "colors": {
+    "paper": { "hex": "#F4F4F2", "role": "Page background — cream printed paper", "source": "phone app src/constants.ts" },
+    "ink": { "hex": "#2E2E2E", "role": "Primary text — charcoal ink", "source": "phone app src/constants.ts" },
+    "ink-muted": { "hex": "#8A8A8A", "role": "Secondary text, eyebrows, dot leaders", "source": "phone app src/constants.ts" },
+    "accent": { "hex": "#F09A4B", "role": "The single warm-orange accent — CTAs, 'Gallery', highlights", "source": "phone app src/constants.ts" },
+    "accent-soft": { "hex": "#FBE3CB", "role": "Accent tint — chips, ::selection, soft fills", "source": "phone app src/constants.ts" },
+    "card": { "hex": "#FFFFFF", "role": "Raised surfaces and the phone screen", "source": "phone app src/constants.ts" }
+  },
+  "fonts": {
+    "display": { "family": "Fraunces", "axes": ["opsz"], "role": "Headings and wordmark — high-contrast literary serif", "sourcing": "next/font/google, variable --font-fraunces", "utility": "font-display" },
+    "sans": { "family": "Instrument Sans", "role": "Body, UI, labels", "sourcing": "next/font/google, variable --font-instrument-sans", "utility": "font-sans" }
+  },
+  "typeScale": {
+    "h1": "clamp(2.5rem, 6vw, 4.25rem), font-display, tight leading",
+    "h2": "clamp(1.9rem, 4vw, 2.75rem), font-display",
+    "eyebrow": "0.75rem, uppercase, 0.25em letter-spacing, font-sans, ink-muted",
+    "body": "1.125rem / 1.7 line-height, font-sans"
+  },
+  "radii": { "card": "1rem", "band": "1.5rem", "phone": "2.75rem" },
+  "shadow": "Soft and low — a single large-blur shadow at ~8-12% ink; never harsh. Example: 0 20px 50px -20px rgba(46, 46, 46, 0.25).",
+  "motion": {
+    "duration": "600ms",
+    "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
+    "pattern": "Reveal-on-scroll via [data-reveal] attribute states (pending then settled), staggered by small per-item delays.",
+    "reducedMotion": "prefers-reduced-motion: reduce disables transitions and shows content immediately; smooth scroll is gated off too."
+  },
+  "layout": {
+    "container": "max-w-6xl, centered, horizontal padding px-6 md:px-8",
+    "sectionPadding": "py-20 md:py-28",
+    "grain": "Fixed full-viewport SVG noise overlay, opacity 0.045, mix-blend-mode multiply, z-index 100."
+  },
+  "customUtilities": {
+    "dot-leader": "Menu price-leader — a flex filler with a repeating radial-gradient dotted rule in currentColor.",
+    "grain": "The paper-grain overlay class applied to an aria-hidden div in the layout."
+  }
+}
