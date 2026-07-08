@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="border-t border-dotted border-ink/20">
@@ -8,6 +10,10 @@ export default function Footer() {
         <span className="text-sm text-ink-muted">
           Photograph a menu, see the dishes.
         </span>
+        <nav className="flex gap-5 text-sm">
+          <Link href="/privacy" className="text-ink-muted transition-colors hover:text-ink">Privacy Policy</Link>
+          <Link href="/terms" className="text-ink-muted transition-colors hover:text-ink">Terms of Use</Link>
+        </nav>
         <span className="text-sm text-ink-muted">© 2026 MenuGallery</span>
       </div>
     </footer>
